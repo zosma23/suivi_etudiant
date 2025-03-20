@@ -1,0 +1,134 @@
+input[type=text] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 0px;
+    margin-left: 0px;
+    resize: vertical;
+  }
+label{
+    margin-right: 0px;
+    margin-left: 0px;
+    width: auto;
+  }
+  
+.btn_nvlsaisie {
+    background-color: #53B655;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+.btn_nvlsaisie:hover {
+    background-color: #408F41;
+  }
+
+  .btn_recap{
+    background-color: #c62385;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 23px;
+  }
+
+.btn_loupe img {
+  width: auto;
+}
+  
+  .container {
+    /* Ajouter box-sizing */
+    box-sizing : border-box;
+    border-radius:5px;
+ 
+    padding:20px;
+    width: 100%;
+    max-width: 440px;
+    margin-top: 150px;
+  }
+
+.fiche{
+  display: flex;
+}
+
+.gauche{
+  width: 45%;
+  height: 78%;
+  margin-right: 20px;
+  margin-left: 50px;
+  border: black solid 1px;
+  border-radius: 23px;
+}
+
+.droite{
+  width: 45%;
+  margin: 1px 20px;
+  border: black solid 1px;
+  border-radius: 23px;
+}
+
+.bandeau{
+  background-color: #212b59;
+  height: 88px;
+  color: white;
+  border-radius: 22px 22px 0px 0px;
+  align-items: center;
+  
+}
+.bandeau label{
+  margin-left: 20px;
+}
+
+.bandeau input{
+  width: auto;
+  background-color: #212b59;
+  border: none;
+  color:white
+}
+.bandeau input::placeholder{
+  color: #dddddd;
+}
+
+.labdate {
+  margin: 200px ;
+}
+
+.date, .labdate {
+  margin : 10px;
+}
+
+.gauche form{
+  padding: 5px 20px;
+}
+
+.gauche form input{
+  width: 60%;
+}
+
+.gauche form label{
+  margin: 1px 50px 1px 10px;
+}
+.label_nom{
+  padding-right: 40px;
+}
+.label_promo{
+  padding-right: 53px;
+}
+
+.label_campus{
+  padding-right: 82px;
+}
+
+.gauche form label, input{
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
