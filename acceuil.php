@@ -13,29 +13,29 @@
     </header>
 
     <main>
-        <h1>SUIVI ETUDIANT</h1>
+        <h1 class="majuscule">SUIVI ETUDIANT</h1>
 
         <div class="fiche">
             <div class="gauche">
 
                 <div class="bandeau">
-                    <label for="id">NUMERO ETUDIANT:</label>
+                    <label class="majuscule" for="id">NUMERO ETUDIANT:</label>
                     <input type="text" name="id" id="id" placeholder="123 456" > 
                     
-                    <label class="labdate" for="start">Date:</label>
+                    <label class="labdate majuscule" for="start">Date:</label>
                     <input class="date" type="date" id="start" name="trip-start" value="______/__/__" min="2018-01-01" max="2050-12-31" />
 
 
                 </div>
 
                 <form action=""> 
-                    <label class="label_nom" for="fname">NOM PRENOM:</label>
+                    <label class="label_nom majuscule" for="fname">NOM PRENOM:</label>
                     <input type="text" id="fname" name="firstname" placeholder="Votre NOM et Prénom">
 
-                    <label class="label_promo" for="promo">PROMOTION:</label>
+                    <label class="label_promo majuscule" for="promo">PROMOTION:</label>
                     <input type="text" id="promo" name="promo" placeholder="Promotion" ></input>
 
-                    <label class="label_campus" for="campus">CAMPUS:</label>
+                    <label class="label_campus majuscule" for="campus">CAMPUS:</label>
                     <input type="text" id="campus" name="campus" placeholder="Campus" ></input>
 
                     <!-- <input class="btn_valider" type="submit" value="VALIDER"> -->
@@ -45,14 +45,14 @@
                 <div>
                     <div class="row row-cols-1 row-cols-md-2 g-4">
                         <div class="col">
-                            <div class="card text-center">
-                            <div class="card-body">
-                                <h5 class="card-title">Note</h5>
-                                <div class="note">
-                                    <span>Moyenne générale :</span> 
+                            <div class="card text-center carte_note">
+                            <div class="card-body card-text">
+                                <h5 class="card-title border-success majuscule">Note</h5>
+                                <div class="note ">
+                                    <p>Moyenne générale :</p>
                                     <input type="number">
                                 </div>
-                                <div class="note">
+                                <div class="note ">
                                     <span>Nombre d'absences :</span>
                                     <input type="number">
                                 </div>
@@ -62,14 +62,11 @@
                         <div class="col">
                             <div class="card text-center">
                             <div class="card-body">
-                                <h5 class="card-title">Accompagnenement equipe</h5>
-                                <!-- <?php include 'niveau_barre.php'; ?> -->
+                                <h5 class="card-title majuscule">Accompagnenement equipe</h5>
+                                
                                     
                                 <div class="showcase">
                                     <div class="rating-system1">
-                            
-                                    
-
                                         <input  class="input_radio" type="radio" name='rate' id="star1" />
                                         <label class="star" for="star1"></label>
 
@@ -144,16 +141,16 @@
                         <div class="col">
                             <div class="card text-center">
                             <div class="card-body">
-                                <h5 class="card-title">Bien être promo/campus</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                                <h5 class="card-title majuscule">Bien être promo/campus</h5>
+                                <p class="card-text">idem card Accompagnenement equipe</p>
                             </div>
                             </div>
                         </div>
                         <div class="col">
                             <div class="card text-center">
                             <div class="card-body">
-                                <h5 class="card-title">Sentiment de progression</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <h5 class="card-title majuscule">Sentiment de progression</h5>
+                                <p class="card-text">idem card Accompagnenement equipe</p>
                             </div>
                             </div>
                         </div>

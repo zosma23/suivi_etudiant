@@ -1,3 +1,7 @@
+.majuscule{
+  text-transform: uppercase;
+}
+
 input[type=text] {
     width: 100%;
     padding: 12px;
@@ -147,6 +151,7 @@ input[type=number] {
 
 
 
+
 /* Cartes */
  
 /* .showcase{
@@ -254,6 +259,11 @@ label:nth-of-type(1):hover  ~ .text:before{
 .rating-system1{
   width:auto;
   display:inline-block;
+  /* display: flex; */
+  /* flex-direction: row-reverse;
+  justify-content: flex-start;*/
+  flex-wrap: wrap; 
+  width: auto;
   margin: 20px 5px;
   position: relative;
 }
