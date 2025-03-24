@@ -45,33 +45,114 @@
                 <div>
                     <div class="row row-cols-1 row-cols-md-2 g-4">
                         <div class="col">
-                            <div class="card">
+                            <div class="card text-center">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <h5 class="card-title">Note</h5>
+                                <div class="note">
+                                    <span>Moyenne générale :</span> 
+                                    <input type="number">
+                                </div>
+                                <div class="note">
+                                    <span>Nombre d'absences :</span>
+                                    <input type="number">
+                                </div>
                             </div>
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card">
+                            <div class="card text-center">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <h5 class="card-title">Accompagnenement equipe</h5>
+                                <!-- <?php include 'niveau_barre.php'; ?> -->
+                                    
+                                <div class="showcase">
+                                    <div class="rating-system1">
+                            
+                                    
+
+                                        <input  class="input_radio" type="radio" name='rate' id="star1" />
+                                        <label class="star" for="star1"></label>
+
+                                        <input  class="input_radio" type="radio" name='rate' id="star2" />
+                                        <label class="star" for="star2"></label>
+
+                                        <input  class="input_radio" type="radio" name='rate' id="star3" />
+                                        <label class="star" for="star3"></label>
+
+                                        <input  class="input_radio" type="radio" name='rate' id="star4" />
+                                        <label class="star" for="star4"></label>
+
+                                        <input  class="input_radio" type="radio" name='rate' id="star5" />
+                                        <label class="star" for="star5"></label>
+
+                                        <input  class="input_radio" type="radio" name='rate' id="star6" />
+                                        <label class="star" for="star6"></label>
+
+                                        <input  class="input_radio" type="radio" name='rate' id="star7" />
+                                        <label class="star" for="star7"></label>
+
+                                        <input  class="input_radio" type="radio" name='rate' id="star8" />
+                                        <label class="star" for="star8"></label>
+
+                                        <input  class="input_radio" type="radio" name='rate' id="star9" />
+                                        <label class="star" for="star9"></label>
+
+                                        <input  class="input_radio" type="radio" name='rate' id="star10" />
+                                        <label class="star" for="star10"></label>
+
+                                        <input  class="input_radio" type="radio" name='rate' id="star11" /> 
+                                        <label class="star" for="star11"></label>
+
+                                        <input  class="input_radio" type="radio" name='rate' id="star12" />
+                                        <label class="star" for="star12"></label>
+
+                                        <input  class="input_radio" type="radio" name='rate' id="star13" />
+                                        <label class="star" for="star13"></label>
+
+                                        <input  class="input_radio" type="radio" name='rate' id="star14" />
+                                        <label class="star" for="star14"></label>
+
+                                        <input  class="input_radio" type="radio" name='rate' id="star15" />
+                                        <label class="star" for="star15"></label>
+
+                                        <input  class="input_radio" type="radio" name='rate' id="star16" />
+                                        <label class="star" for="star16"></label>
+
+                                        <input  class="input_radio" type="radio" name='rate' id="star17" />
+                                        <label class="star" for="star17"></label>
+
+                                        <input  class="input_radio" type="radio" name='rate' id="star18" />
+                                        <label class="star" for="star18"></label>
+
+                                        <input  class="input_radio" type="radio" name='rate' id="star19" />
+                                        <label class="star" for="star19"></label>
+
+                                        <input  class="input_radio" type="radio" name='rate' id="star20" />
+                                        <label class="star" for="star20"></label>
+                                    
+
+
+                                        
+                                    <div class="text"></div>
+                                    </div>
+                                    
+                                    </div>
+
                             </div>
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card">
+                            <div class="card text-center">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
+                                <h5 class="card-title">Bien être promo/campus</h5>
                                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
                             </div>
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card">
+                            <div class="card text-center">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
+                                <h5 class="card-title">Sentiment de progression</h5>
                                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                             </div>
                             </div>
