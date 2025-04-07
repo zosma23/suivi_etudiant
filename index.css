@@ -34,16 +34,16 @@ label{
     background-color: #408F41;
   }
 
-  .btn_recap{
-    background-color: #c62385;
-    color: white;
-    padding: 8px 20px;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    margin-top: 10px;
-    margin-left: 23px;
-  }
+.btn_recap{
+  background-color: #c62385;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 23px;
+}
 
 .btn_loupe img {
   width: auto;
@@ -154,15 +154,26 @@ input[type=number] {
 
 .note{
   display: flex;
-  gap: 5;
+  gap: 1;
 }
 
-.bandeau_titret{
-  /* height: 24%; */
-  height: 41px;
+.bandeau_titre{
   background-color: #c62385;
-  /* z-index: 1; */
+  height: 50px; /* Ajuste la hauteur selon ton besoin */
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5px 5px 0 0;
 } 
+
+h5{
+  position: relative;
+  font-size: 1.2em;
+  text-align: center;
+  margin: auto;
+  color: white !important;
+}
 
 .card{
   background-color: #dddddd;
@@ -172,6 +183,10 @@ input[type=number] {
   
 }
 
+.moyenne {
+  padding-bottom: 20px;
+  align-items: center;
+}
 
 
 
@@ -326,165 +341,168 @@ label:nth-of-type(1):hover  ~ .text:before{
   transition:all 0.3s;
 }
 
+
+
 .rating-system1 .input_radio:checked ~ .star,
 .rating-system1 .star:hover ~ .star,
 .rating-system1 .star:hover{
   background:#212b59b0;
 }
 
-.rating-system1 .input_radio:checked ~ .star:before{
-}  
+/* .rating-system1 .input_radio:checked ~ .star:before{
+}   */
 .text{
   padding:10px 0;
   position: absolute;
   width:100%;
   top:100%;  
+  font-size: 20px;
 }
 
 /* selecting */
-.input_radio:nth-of-type(1):checked  ~ .text:before{ 
+.input_radio:nth-of-type(11):checked  ~ .text:before{ 
   content:"20";
 }
 
-.star:nth-of-type(1):hover  ~ .text:before{
+.star:nth-of-type(11):hover  ~ .text:before{
   content:"20"!important;
 }
 
-.input_radio:nth-of-type(2):checked  ~ .text:before{
+.input_radio:nth-of-type(12):checked  ~ .text:before{
   content:"19";
 }
 
-.star:nth-of-type(2):hover  ~ .text:before
+.star:nth-of-type(12):hover  ~ .text:before
 {
   content:"19"!important;
 }
 
-.input_radio:nth-of-type(3):checked  ~ .text:before{
+.input_radio:nth-of-type(13):checked  ~ .text:before{
   content:"18";
 }
 
-.star:nth-of-type(3):hover  ~ .text:before{
+.star:nth-of-type(13):hover  ~ .text:before{
     content:"18"!important;
 }
 
-.input_radio:nth-of-type(4):checked  ~ .text:before{
+.input_radio:nth-of-type(14):checked  ~ .text:before{
   content:"17";
 }
-.star:nth-of-type(4):hover  ~ .text:before{
+.star:nth-of-type(14):hover  ~ .text:before{
   content:"17"!important;
 }
 
-.input_radio:nth-of-type(5):checked  ~ .text:before{
+.input_radio:nth-of-type(15):checked  ~ .text:before{
   content:"16";
 }
-.star:nth-of-type(5):hover  ~ .text:before{
+.star:nth-of-type(15):hover  ~ .text:before{
  content:"16"!important;
 }
 
 
-.input_radio:nth-of-type(6):checked  ~ .text:before{ 
+.input_radio:nth-of-type(16):checked  ~ .text:before{ 
   content:"15";
 }
 
-.star:nth-of-type(6):hover  ~ .text:before{
+.star:nth-of-type(16):hover  ~ .text:before{
   content:"15"!important;
 }
 
-.input_radio:nth-of-type(7):checked  ~ .text:before{
+.input_radio:nth-of-type(17):checked  ~ .text:before{
   content:"14";
 }
 
-.star:nth-of-type(7):hover  ~ .text:before
+.star:nth-of-type(17):hover  ~ .text:before
 {
   content:"14"!important;
 }
 
-.input_radio:nth-of-type(8):checked  ~ .text:before{
+.input_radio:nth-of-type(18):checked  ~ .text:before{
   content:"13";
 }
 
-.star:nth-of-type(8):hover  ~ .text:before{
+.star:nth-of-type(18):hover  ~ .text:before{
     content:"13"!important;
 }
 
-.input_radio:nth-of-type(9):checked  ~ .text:before{
+.input_radio:nth-of-type(19):checked  ~ .text:before{
   content:"12";
 }
-.star:nth-of-type(9):hover  ~ .text:before{
+.star:nth-of-type(19):hover  ~ .text:before{
   content:"12"!important;
 }
 
-.input_radio:nth-of-type(10):checked  ~ .text:before{
+.input_radio:nth-of-type(20):checked  ~ .text:before{
   content:"11";
 }
-.star:nth-of-type(10):hover  ~ .text:before{
+.star:nth-of-type(20):hover  ~ .text:before{
  content:"11"!important;
 }
 
-.input_radio:nth-of-type(11):checked  ~ .text:before{
+.input_radio:nth-of-type(1):checked  ~ .text:before{
   content:"10";
 }
-.star:nth-of-type(11):hover  ~ .text:before{
+.star:nth-of-type(1):hover  ~ .text:before{
  content:"10"!important;
 }
 
-.input_radio:nth-of-type(12):checked  ~ .text:before{
+.input_radio:nth-of-type(2):checked  ~ .text:before{
   content:"9";
 }
-.star:nth-of-type(12):hover  ~ .text:before{
+.star:nth-of-type(2):hover  ~ .text:before{
  content:"9"!important;
 }
 
-.input_radio:nth-of-type(13):checked  ~ .text:before{
+.input_radio:nth-of-type(3):checked  ~ .text:before{
   content:"8";
 }
-.star:nth-of-type(13):hover  ~ .text:before{
+.star:nth-of-type(3):hover  ~ .text:before{
  content:"8"!important;
 }
 
-.input_radio:nth-of-type(14):checked  ~ .text:before{
+.input_radio:nth-of-type(4):checked  ~ .text:before{
   content:"7";
 }
-.star:nth-of-type(14):hover  ~ .text:before{
+.star:nth-of-type(4):hover  ~ .text:before{
  content:"7"!important;
 }
 
-.input_radio:nth-of-type(15):checked  ~ .text:before{
+.input_radio:nth-of-type(5):checked  ~ .text:before{
   content:"6";
 }
-.star:nth-of-type(15):hover  ~ .text:before{
+.star:nth-of-type(5):hover  ~ .text:before{
  content:"6"!important;
 }
-.input_radio:nth-of-type(16):checked  ~ .text:before{
+.input_radio:nth-of-type(6):checked  ~ .text:before{
   content:"5";
 }
-.star:nth-of-type(16):hover  ~ .text:before{
+.star:nth-of-type(6):hover  ~ .text:before{
  content:"5"!important;
 }
-.input_radio:nth-of-type(17):checked  ~ .text:before{
+.input_radio:nth-of-type(7):checked  ~ .text:before{
   content:"4";
 }
-.star:nth-of-type(17):hover  ~ .text:before{
+.star:nth-of-type(7):hover  ~ .text:before{
  content:"4"!important;
 }
-.input_radio:nth-of-type(18):checked  ~ .text:before{
+.input_radio:nth-of-type(8):checked  ~ .text:before{
   content:"3";
 }
-.star:nth-of-type(18):hover  ~ .text:before{
+.star:nth-of-type(8):hover  ~ .text:before{
  content:"3"!important;
 }
 
-.input_radio:nth-of-type(19):checked  ~ .text:before{
+.input_radio:nth-of-type(9):checked  ~ .text:before{
   content:"2";
 }
-.star:nth-of-type(19):hover  ~ .text:before{
+.star:nth-of-type(9):hover  ~ .text:before{
  content:"2"!important;
 }
 
-.input_radio:nth-of-type(20):checked  ~ .text:before{
+.input_radio:nth-of-type(10):checked  ~ .text:before{
   content:"1";
 }
-.star:nth-of-type(20):hover  ~ .text:before{
+.star:nth-of-type(10):hover  ~ .text:before{
  content:"1"!important;
 }
 
@@ -496,6 +514,14 @@ label:nth-of-type(1):hover  ~ .text:before{
   margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
+  /* border: black solid 1px; */
+  /* border-radius: 23px; */
+}
+
+.border_droite{
+  /* margin-bottom: auto;
+  margin-left: auto; */
+  /* margin-right: auto; */
   border: black solid 1px;
   border-radius: 23px;
 }
@@ -529,3 +555,98 @@ label:nth-of-type(1):hover  ~ .text:before{
   text-align: center;
 }
 
+.card_cercle{
+  margin-top: 5px !important;
+}
+
+.progress-circle{
+  position: relative;             /* pour servir de référent */
+  box-sizing: border-box;         /* prise en compte bordure dans la dimension */
+  font-size: 6em;                 /* pour définir les dimensions */
+  width: 1em;                     /* fixe la largeur */
+  height: 1em;                    /* fixe la hauteur */
+  border-radius: 50%;             /* rendu aspect circulaire */
+  border: .15em solid #dddddd;       /* couleur de fond de l'anneau */
+  background-color: #dddddd;         /* couleur de fond de la progress bar */
+  box-shadow: 0 0 0 1px black;       /* Ajoute une bordure extèrieure */
+  
+
+}
+
+.progress-masque {
+  position: absolute;
+  width: 1em;                     /* 100% de la largeur */
+  height: 1em;                    /* 100% de la hauteur */
+  left: -.15em;                   /* décalage de la largeur bordure de la gauge */
+  top: -.15em;                    /* décalage de la largeur bordure de la gauge */
+  clip: rect(0, 1em, 1em, .5em);  /* par défaut seule la partie droite est visible */
+
+}
+
+.progress-barre,
+.progress-sup50 {
+  position: absolute;
+  box-sizing: border-box;         /* prise en compte bordure dans la dimension */
+  border-width: .15em;            /* largeur bordure de la gauge */
+  border-style: solid;
+  border-color: #212b59;
+  border-radius: 50%;             /* rendu aspect circulaire */
+  width: 1em;                     /* largeur à 100% */
+  height: 1em;                    /* hauteur à 100% */
+  clip: rect(0, .5em, 1em, 0);    /* on ne garde que la partie gauche */
+}
+
+.progress-sup50 {
+  display: none;
+  clip: rect(0, 1em, 1em, .5em);
+  
+}
+
+.progress-circle:after {
+  content: attr(data-value) "%";  /* récup. valeur de progression */
+  font-size: 0.15em;              /* taille de la font en % du parent */
+  height: 100%;                   /* centrage dans le parent */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /*-- pour effet shadow intérieur --*/
+  border-radius: 50%;
+  border: black solid 1px;
+}
+
+.progress-circle.thin,
+.progress-circle.thin .progress-barre,
+.progress-circle.thin .progress-sup50 {
+  border-width: .075em;          /* largeur bordure de la gauge  */
+  
+}
+.progress-circle.thin .progress-masque {
+  left: -.075em;                  /* largeur bordure gauge  */
+  top: -.075em;                   /* largeur bordure gauge  */
+}
+
+.progress-wrapper {
+  display: inline-block;
+}
+
+
+.card-text{
+  padding: 0px;
+  margin: 0px;
+}
+
+#resetButton {
+  margin-top: 20px;      /* espace entre le cercle et le bouton */
+  padding: 5px 20px;    /* taille du bouton */
+  font-size: 1em;        /* taille du texte dans le bouton */
+  cursor: pointer;      /* souris en forme de main pour le bouton */
+  background-color: #c62385; /* couleur de fond du bouton */
+  color: white;          /* couleur du texte */
+  border: none;          /* enlever les bordures par défaut */
+  border-radius: 5px;    /* arrondir les coins du bouton */
+}
+
+#resetButton:hover {
+  background-color: #555; /* couleur au survol */
+}

@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fiche Etudiant</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="global.css">
 </head>
 <div class="container-fluid">
 <body class="filigrane">
@@ -48,9 +48,9 @@
                     <div class="row row-cols-1 row-cols-md-2 g-4">
                         <div class="col">
                             <div class="card text-center carte_note">
-                                <div class="bandeau_titre">
+                                <div class="bandeau_titre"></div>
                                     <div class="card-body card-text ">
-                                        <h5 class=" card-title majuscule">Note</h5>
+                                        <h5 class=" card-title moyenne majuscule">Note</h5>
                                         <div class="note ">
                                             <p>Moyenne générale :</p>
                                             <input type="number">
@@ -60,17 +60,40 @@
                                             <input type="number">
                                         </div>
                                     </div>
-                                </div>
+                                
                             </div>
                         </div>
                         <div class="col">
                             <div class="card text-center">
+                            <div class="bandeau_titre"></div>
                             <div class="card-body">
-                                <h5 class=" card-title majuscule">Accompagnenement equipe</h5>
+                                <h5 class=" card-title moyenne majuscule">Accompagnenement equipe</h5>
                                 
                                     
                                 <div class="showcase">
                                     <div class="rating-system1">
+
+                                        <input  class="input_radio" type="radio" name='rate' id="star10" />
+                                        <label class="star" for="star10"></label>
+                                        <input  class="input_radio" type="radio" name='rate' id="star9" />
+                                        <label class="star" for="star9"></label>
+                                        <input  class="input_radio" type="radio" name='rate' id="star8" />
+                                        <label class="star" for="star8"></label>
+                                        <input  class="input_radio" type="radio" name='rate' id="star7" />
+                                        <label class="star" for="star7"></label>
+                                        <input  class="input_radio" type="radio" name='rate' id="star6" />
+                                        <label class="star" for="star6"></label>
+                                        <input  class="input_radio" type="radio" name='rate' id="star5" />
+                                        <label class="star" for="star5"></label><input  class="input_radio" type="radio" name='rate' id="star4" />
+                                        <label class="star" for="star4"></label>
+                                        <input  class="input_radio" type="radio" name='rate' id="star3" />
+                                        <label class="star" for="star3"></label>
+                                        <input  class="input_radio" type="radio" name='rate' id="star2" />
+                                        <label class="star" for="star2"></label>
+                                        <input  class="input_radio" type="radio" name='rate' id="star1" />
+                                        <label class="star" for="star1"></label>
+
+
                                         <input  class="input_radio" type="radio" name='rate' id="star20" />
                                         <label class="star" for="star20"></label>
 
@@ -100,36 +123,7 @@
                                         
                                         <input  class="input_radio" type="radio" name='rate' id="star11" /> 
                                         <label class="star" for="star11"></label>
-                                        
-                                        <input  class="input_radio" type="radio" name='rate' id="star10" />
-                                        <label class="star" for="star10"></label>
-                                        
-                                        <input  class="input_radio" type="radio" name='rate' id="star9" />
-                                        <label class="star" for="star9"></label>
-                                        
-                                        <input  class="input_radio" type="radio" name='rate' id="star8" />
-                                        <label class="star" for="star8"></label>
-                                        
-                                        <input  class="input_radio" type="radio" name='rate' id="star7" />
-                                        <label class="star" for="star7"></label>
-                                        
-                                        <input  class="input_radio" type="radio" name='rate' id="star6" />
-                                        <label class="star" for="star6"></label>
-                                        
-                                        <input  class="input_radio" type="radio" name='rate' id="star5" />
-                                        <label class="star" for="star5"></label>
-                                        
-                                        <input  class="input_radio" type="radio" name='rate' id="star4" />
-                                        <label class="star" for="star4"></label>
-                                        
-                                        <input  class="input_radio" type="radio" name='rate' id="star3" />
-                                        <label class="star" for="star3"></label>
-                                        
-                                        <input  class="input_radio" type="radio" name='rate' id="star2" />
-                                        <label class="star" for="star2"></label>
-                                        
-                                        <input  class="input_radio" type="radio" name='rate' id="star1" />
-                                        <label class="star" for="star1"></label>
+
 
                                     <div class="text"></div>
                                     </div>
@@ -141,16 +135,18 @@
                         </div>
                         <div class="col">
                             <div class="card text-center">
+                            <div class="bandeau_titre"></div>
                             <div class="card-body">
-                                <h5 class=" card-title majuscule">Bien être promo/campus</h5>
+                                <h5 class=" card-title moyenne majuscule">Bien être promo/campus</h5>
                                 <p class="card-text">idem card Accompagnenement equipe</p>
                             </div>
                             </div>
                         </div>
                         <div class="col">
                             <div class="card text-center">
+                            <div class="bandeau_titre"></div>
                             <div class="card-body">
-                                <h5 class=" card-title majuscule">Sentiment de progression</h5>
+                                <h5 class=" card-title moyenne majuscule">Sentiment de progression</h5>
                                 <p class="card-text">idem card Accompagnenement equipe</p>
                             </div>
                             </div>
@@ -162,36 +158,59 @@
             </div>
 
             <div class="droite">
-                <form action=""> 
-                    <label class="majuscule" for="ressenti">ressenti génerale:</label>
-                    <input class="input_ressenti" type="text" id="ressenti" name="ressenti" placeholder="Votre ressenti génerale">
-                    <input class="input_note" type="number" id="note" name="note" placeholder="--/20">
+                <div class="border_droite">
+                    <form action=""> 
+                        <label class="majuscule" for="ressenti">ressenti génerale:</label>
+                        <input class="input_ressenti" type="text" id="ressenti" name="ressenti" placeholder="Votre ressenti génerale">
+                        <input class="input_note" type="number" id="note" name="note" placeholder="--/20">
 
-                    <label class=" majuscule" for="action">action à mener</label>
-                    <input type="text" id="action" name="action" placeholder="Les action à mener" ></input>
+                        <label class=" majuscule" for="action">action à mener</label>
+                        <input type="text" id="action" name="action" placeholder="Les action à mener" ></input>
 
-                    <label class=" majuscule" for="softskills">soft skills:</label>
-                    <input type="text" id="softskills" name="softskills" placeholder="Vos soft skills" ></input>
+                        <label class=" majuscule" for="softskills">soft skills:</label>
+                        <input type="text" id="softskills" name="softskills" placeholder="Vos soft skills" ></input>
 
-                    <!-- <input class="btn_valider" type="submit" value="VALIDER"> -->
+                        <!-- <input class="btn_valider" type="submit" value="VALIDER"> -->
 
-                </form>
+                    </form>
+                </div>
+                <div class="card_cercle">
+                    <div class="col">
+                    <div class="card text-center">
+                    <div class="bandeau_titre"></div>
+                    <div class="card-body">
+                        <h5 class=" card-title moyenne majuscule">score global</h5>
+                        <p class="card-text">
+                        <div class="progress-wrapper">
+                        <div class="progress-circle thin" data-value="38">
+                            <div class="progress-masque">
+                                <div class="progress-barre"></div>
+                                <div class="progress-sup50"></div>
+                            </div>
+                        </div>
+                        </div>
+                        <button id="resetButton">Réinitialiser</button>
+                        </p>
+                    </div>
+                    </div>
 
+                    </div>
+                </div>
+        
             </div>
-
         </div>
 
 
 
-            </div>
-	    </div>
-</div>
+        
+
     </main>
     
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="progress_circle.js"></script>
 </body>
 </div>
 </html>
