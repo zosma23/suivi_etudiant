@@ -145,29 +145,37 @@ label{
   margin-bottom: 50px;
 }
 
-input[type=number] {
-  width: 53px;
-  height: 5px;
-  padding: 12px;
-  margin-left: 20px;
+
+.text_note input[type=number] {
+  width: 60px !important;
+  margin-left: 10px;
+  
 }
 
-.note{
+.note {
   display: flex;
-  gap: 1;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 15%;
 }
 
-.bandeau_titre{
+
+.note label {
+  flex: 1;
+  margin: 0;
+}
+
+.bandeau_titre {
   background-color: #c62385;
-  height: 50px; /* Ajuste la hauteur selon ton besoin */
+  height: 50px;
   width: 100%;
   position: absolute;
-  top: 0;
-  left: 0;
+  /* top: 0;
+  left: 0; */
   border-radius: 5px 5px 0 0;
-} 
+}
 
-h5{
+h5 {
   position: relative;
   font-size: 1.2em;
   text-align: center;
@@ -175,7 +183,10 @@ h5{
   color: white !important;
 }
 
-.card{
+.ooh{
+  margin-top: 10px;
+}
+.card {
   background-color: #dddddd;
   border: solid 1px black;
   margin-left: 4%;
@@ -186,6 +197,11 @@ h5{
 .moyenne {
   padding-bottom: 20px;
   align-items: center;
+}
+
+.text_note {
+  margin-top: 5%;
+  margin-left: 5%;
 }
 
 
@@ -631,12 +647,7 @@ label:nth-of-type(1):hover  ~ .text:before{
 }
 
 
-.card-text{
-  padding: 0px;
-  margin: 0px;
-}
-
-#resetButton {
+#updateButton {
   margin-top: 20px;      /* espace entre le cercle et le bouton */
   padding: 5px 20px;    /* taille du bouton */
   font-size: 1em;        /* taille du texte dans le bouton */
@@ -647,6 +658,53 @@ label:nth-of-type(1):hover  ~ .text:before{
   border-radius: 5px;    /* arrondir les coins du bouton */
 }
 
-#resetButton:hover {
-  background-color: #555; /* couleur au survol */
+#updateButton:hover {
+  background-color: #c62385be; /* couleur au survol */
+}
+
+.separation{
+  border-top: solid 2px #c62385;
+  margin-top: 30px;
+}
+
+
+
+.button-group {
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;   /* Centrage horizontal */
+  gap: 20%;                 /* Marge horizontale entre les boutons */
+}
+
+.button-group button {
+  flex: 1;
+  width: 80px;
+  padding: 5px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+.button-group button:hover {
+  background-color: #555;
+}
+
+#resetButton {
+  background-color: #dddddd;
+}
+
+#valider{
+  background-color: #53B655;
+}
+
+#graph{
+  background-color: #ffed00;
+}
+
+.alert-success{
+  display: none;
 }

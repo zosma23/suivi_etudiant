@@ -60,8 +60,8 @@ document.addEventListener('DOMContentLoaded', function () {
 // Récupère l'élément progress-circle
 const progressCircle = document.querySelector('.progress-circle');
 
-// Récupère le bouton reset
-const resetButton = document.getElementById('resetButton');
+// Récupère le bouton update
+const updateButton = document.getElementById('updateButton');
 
 // Fonction pour mettre à jour la progression du cercle
 function updateProgress() {
@@ -85,8 +85,8 @@ function updateProgress() {
   progressCircle.querySelector('span').textContent = value + '%';
 }
 
-// Fonction pour réinitialiser la progression
-resetButton.addEventListener('click', function() {
+// Fonction pour actuliser la progression
+updateButton.addEventListener('click', function() {
   // Remet la valeur data-value à 0 (ou à une autre valeur de départ si tu veux)
   progressCircle.setAttribute('data-value', 0);
 
@@ -96,3 +96,23 @@ resetButton.addEventListener('click', function() {
 
 // Initialiser la progression au chargement de la page
 updateProgress();
+
+
+
+// function valider() {
+//   alert("Votre saisie a bien été validée !");
+// }
+document.addEventListener("DOMContentLoaded", function() {
+  // Lorsque le bouton est cliqué
+  document.getElementById('validerBtn').addEventListener('click', function() {
+    const alert = document.getElementById('successAlert');
+
+    // Afficher l'alerte
+    alert.style.display = 'block';
+
+    // Cacher l'alerte après 3 secondes
+    setTimeout(function() {
+      alert.style.display = 'none';
+    }, 3000); // 3000ms = 3 secondes
+  });
+});

@@ -46,11 +46,12 @@
 
                 <div>
                     <div class="row row-cols-1 row-cols-md-2 g-4">
-                        <div class="col">
+                        <!-- <div class="col">
                             <div class="card text-center carte_note">
                                 <div class="bandeau_titre"></div>
-                                    <div class="card-body card-text ">
+                                    <div class="card-text ">
                                         <h5 class=" card-title moyenne majuscule">Note</h5>
+                                        <div class=text_note>
                                         <div class="note ">
                                             <p>Moyenne générale :</p>
                                             <input type="number">
@@ -59,10 +60,33 @@
                                             <span>Nombre d'absences :</span>
                                             <input type="number">
                                         </div>
+                                        </div>
                                     </div>
                                 
                             </div>
-                        </div>
+                        </div> -->
+                        <div class="col">
+                            <div class="card text-center carte_note">
+                                <div class="bandeau_titre"></div>
+                                <div class="card-text">
+                                <h5 class="card-title moyenne majuscule ooh">Note</h5>
+
+                                <form class="text_note">
+                                    <div class="note">
+                                    <label for="moyenne">Moyenne générale :</label>
+                                    <input type="number" id="moyenne" name="moyenne">
+                                    </div>
+
+                                    <div class="note">
+                                    <label for="absences">Nombre d'absences :</label>
+                                    <input type="number" id="absences" name="absences">
+                                    </div>
+                                </form>
+
+                                </div>
+                            </div>
+                            </div>
+
                         <div class="col">
                             <div class="card text-center">
                             <div class="bandeau_titre"></div>
@@ -128,7 +152,7 @@
                                     <div class="text"></div>
                                     </div>
                                     
-                                    </div>
+                                </div>
 
                             </div>
                             </div>
@@ -162,7 +186,7 @@
                     <form action=""> 
                         <label class="majuscule" for="ressenti">ressenti génerale:</label>
                         <input class="input_ressenti" type="text" id="ressenti" name="ressenti" placeholder="Votre ressenti génerale">
-                        <input class="input_note" type="number" id="note" name="note" placeholder="--/20">
+                        <input class="input_note" typ   " id="note" name="note" placeholder="--/20">
 
                         <label class=" majuscule" for="action">action à mener</label>
                         <input type="text" id="action" name="action" placeholder="Les action à mener" ></input>
@@ -180,7 +204,7 @@
                     <div class="bandeau_titre"></div>
                     <div class="card-body">
                         <h5 class=" card-title moyenne majuscule">score global</h5>
-                        <p class="card-text">
+                        <div class="card-text">
                         <div class="progress-wrapper">
                         <div class="progress-circle thin" data-value="38">
                             <div class="progress-masque">
@@ -189,12 +213,25 @@
                             </div>
                         </div>
                         </div>
-                        <button id="resetButton">Réinitialiser</button>
-                        </p>
+                        </div>
+                        <button id="updateButton">Actualiser</button>
                     </div>
                     </div>
 
                     </div>
+                </div>
+
+
+                <div class="separation"></div>
+
+
+                    <div class="button-group">
+                        <button id="resetButton" onclick="location.reload()">Réinitialiser</button>
+                        <button id="valide" type="button" class="btn btn-secondary" id="validerBtn">Valider</button>                        
+                        <button id="graph" onclick="window.location.href='graphique.php'">Graphique</button>
+                    </div>
+                    <div class="alert alert-success" role="alert">A simple success alert—check it out!</div>
+
                 </div>
         
             </div>
