@@ -102,17 +102,3 @@ updateProgress();
 // function valider() {
 //   alert("Votre saisie a bien été validée !");
 // }
-document.addEventListener("DOMContentLoaded", function() {
-  // Lorsque le bouton est cliqué
-  document.getElementById('validerBtn').addEventListener('click', function() {
-    const alert = document.getElementById('successAlert');
-
-    // Afficher l'alerte
-    alert.style.display = 'block';
-
-    // Cacher l'alerte après 3 secondes
-    setTimeout(function() {
-      alert.style.display = 'none';
-    }, 3000); // 3000ms = 3 secondes
-  });
-});

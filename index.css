@@ -62,6 +62,8 @@ label{
 
 .fiche{
   display: flex;
+  flex-direction: row;
+  gap: 20px;
 
   /* justify-content: space-between;
   align-items: center; */
@@ -74,9 +76,17 @@ label{
   margin-left: 50px; */
   /* margin:auto; */
   margin-left: auto;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+  
+
+}
+.border_gauche{
+  /* margin-bottom: auto;
+  margin-left: auto; */
+  /* margin-right: auto; */
   border: black solid 1px;
   border-radius: 23px;
+  padding-bottom: 30px !important;
 }
 
 .bandeau{
@@ -113,16 +123,16 @@ label{
   color: white;
 }
 
-.gauche form{
+.formulaire{
   padding: 5px 20px;
 }
 
-.gauche form input{
+.formulaire input{
   width: 60%;
   border: black solid 1px;
 }
 
-.gauche form label{
+.formulaire label{
   margin: 1px 50px 1px 10px;
   /* margin: 1% 10% 1% 10%; */
 }
@@ -140,7 +150,7 @@ label{
   /* margin-right: 18%; */
 }
 
-.gauche form label, input{
+.formulaire label, input{
   /* padding-bottom: 50px; */
   margin-bottom: 50px;
 }
@@ -149,15 +159,9 @@ label{
 .text_note input[type=number] {
   width: 60px !important;
   margin-left: 10px;
-  
+  margin-bottom: 10%;
 }
 
-.note {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-right: 15%;
-}
 
 
 .note label {
@@ -165,33 +169,45 @@ label{
   margin: 0;
 }
 
+
+
+
+/* ================ Carte des notes =============== */
+
 .bandeau_titre {
   background-color: #c62385;
-  height: 50px;
+  height: 40px;
   width: 100%;
   position: absolute;
   /* top: 0;
   left: 0; */
   border-radius: 5px 5px 0 0;
+  align-items: center;
 }
 
 h5 {
   position: relative;
-  font-size: 1.2em;
+  font-size: 1em;
   text-align: center;
   margin: auto;
   color: white !important;
 }
 
 .ooh{
-  margin-top: 10px;
+  margin-top: 3%;
 }
 .card {
   background-color: #dddddd;
   border: solid 1px black;
   margin-left: 4%;
   margin-right: 4%;
+  padding: 0 !important;
   
+}
+
+.card-body {
+  padding: 3% 1%;
+  margin: 0 1%;
 }
 
 .moyenne {
@@ -199,332 +215,122 @@ h5 {
   align-items: center;
 }
 
-.text_note {
-  margin-top: 5%;
-  margin-left: 5%;
-}
 
-
-
-
- 
-/*.showcase{
-  text-align:center;
-  position: absolute;
-  top:50%;
-  left:50%;
-  transform:translateY(-50%) translateX(-50%);
-  display : flex;
-}
-.rating-system1{
-  width:auto;
-  display:inline-block;
-  margin:20px;
-  position: relative;
-  flex-direction: reverse;
-}
-
-
-input{
-  display:none;
-}
-
-label{
-  float:right;
-  display:inline-block;
-  width:20px;
-  height:5px;
-  background:#ccc;
-  margin:4px;
-  position: relative;
-  transition:all .3s;
-}
-.rating-system1 label:before{
-  content: '';
-  position: absolute;
-  width:100%;
-  height:100%;
-  background: inherit;
-  top:0;
-  left:0;
-  transition:all 0.3s;
-}
-.rating-system1 input:checked ~ label,
-.rating-system1 label:hover ~ label,
-.rating-system1 label:hover{
-  background:#212b59b0;
-}
-.rating-system1 input:checked ~ label:before{
-}  
-.text{
-  color:#ccc;
-  padding:10px 0;
-  position: absolute;
-  width:100%;
-  top:100%;  
-}
-
-
-
-
-selecting
-input:nth-of-type(5):checked  ~ .text:before{ 
-  content:"1";
-}
-
-label:nth-of-type(5):hover  ~ .text:before{
-  content:"1"!important;
-}
-
-input:nth-of-type(4):checked  ~ .text:before{
-  content:"2";
-}
-
-label:nth-of-type(4):hover  ~ .text:before
-{
-  content:"2"!important;
-}
-
-input:nth-of-type(3):checked  ~ .text:before{
-  content:"3";
-}
-
-label:nth-of-type(3):hover  ~ .text:before{
-    content:"3"!important;
-}
-
-input:nth-of-type(2):checked  ~ .text:before{
-  content:"4";
-}
-label:nth-of-type(2):hover  ~ .text:before{
-  content:"4"!important;
-}
-
-input:nth-of-type(1):checked  ~ .text:before{
-  content:"5";
-}
-label:nth-of-type(1):hover  ~ .text:before{
- content:"5"!important;
-}
-
-}  */
-
-
-
-.rating-system1{
-  width:auto;
-  display:inline-block;
+/* ================ Petit carre des notes =============== */
+.rectcontainer {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-start;
-
-  flex-wrap: wrap; 
-  width: auto;
-  margin-bottom: 30px;
-  position: relative;
-
+  flex-wrap: wrap;
+  /* gap: 8px; */
+  justify-content: center;
+  margin-bottom: 5%;
+  margin-top: 0 !important;
+  padding-top : 3%;
 }
 
-.input_radio{
-  display:none;
+.rectangle {
+  width: 8%;
+  height: 15px;
+  background-color: lightgray;
+  border: 1px solid #aaa;
+  transition: background-color 0.2s;
+  cursor: pointer;
+  margin: 2px;
+  margin-bottom: 5px;
 }
 
-.star{
-  /* float:right; */
-  display:inline-block;
-  width:7%;
-  height:10px;
-  background:#dddddd;
-  border: solid 1px black;
-  margin:4px;
-  position: relative;
-  transition:all .3s;
+.rectangle.active {
+  background-color: #212b59;
 }
 
-.star:hover {
-  background: #212b59b0;
-  transform: scale(1.1); /* Légère augmentation de taille au survol */
-}
-
-.rating-system1 .star:before{
-  content: '';
-  position: absolute;
-  width:100%;
-  height:100%;
-  background: inherit;
-  top:0;
-  left:0;
-  transition:all 0.3s;
-}
-
-
-
-.rating-system1 .input_radio:checked ~ .star,
-.rating-system1 .star:hover ~ .star,
-.rating-system1 .star:hover{
-  background:#212b59b0;
-}
-
-/* .rating-system1 .input_radio:checked ~ .star:before{
-}   */
-.text{
-  padding:10px 0;
-  position: absolute;
-  width:100%;
-  top:100%;  
+#output {
   font-size: 20px;
-}
-
-/* selecting */
-.input_radio:nth-of-type(11):checked  ~ .text:before{ 
-  content:"20";
-}
-
-.star:nth-of-type(11):hover  ~ .text:before{
-  content:"20"!important;
-}
-
-.input_radio:nth-of-type(12):checked  ~ .text:before{
-  content:"19";
-}
-
-.star:nth-of-type(12):hover  ~ .text:before
-{
-  content:"19"!important;
-}
-
-.input_radio:nth-of-type(13):checked  ~ .text:before{
-  content:"18";
-}
-
-.star:nth-of-type(13):hover  ~ .text:before{
-    content:"18"!important;
-}
-
-.input_radio:nth-of-type(14):checked  ~ .text:before{
-  content:"17";
-}
-.star:nth-of-type(14):hover  ~ .text:before{
-  content:"17"!important;
-}
-
-.input_radio:nth-of-type(15):checked  ~ .text:before{
-  content:"16";
-}
-.star:nth-of-type(15):hover  ~ .text:before{
- content:"16"!important;
+  font-weight: bold;
+  min-height: 24px;
+  padding-bottom: 10px;
 }
 
 
-.input_radio:nth-of-type(16):checked  ~ .text:before{ 
-  content:"15";
+.rectcontainer2 {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 8px; */
+  justify-content: center;
+  margin-bottom: 5%;
+  margin-top: 0 !important;
+  padding-top: 3%;
 }
 
-.star:nth-of-type(16):hover  ~ .text:before{
-  content:"15"!important;
+.rectangle2 {
+  width: 8%;
+  height: 15px;
+  background-color: lightgray;
+  border: 1px solid #aaa;
+  transition: background-color 0.2s;
+  cursor: pointer;
+  margin: 2px;
+  margin-bottom: 5px;
 }
 
-.input_radio:nth-of-type(17):checked  ~ .text:before{
-  content:"14";
+.rectangle2.active {
+  background-color: #212b59;
 }
 
-.star:nth-of-type(17):hover  ~ .text:before
-{
-  content:"14"!important;
+#output2 {
+  font-size: 20px;
+  font-weight: bold;
+  min-height: 24px;
+  padding-bottom: 10px;
 }
 
-.input_radio:nth-of-type(18):checked  ~ .text:before{
-  content:"13";
+
+.rectcontainer3 {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 8px; */
+  justify-content: center;
+  margin-bottom: 5%;
+  margin-top: 0 !important;
+  padding-top: 3%;
 }
 
-.star:nth-of-type(18):hover  ~ .text:before{
-    content:"13"!important;
+.rectangle3 {
+  width: 8%;
+  height: 15px;
+  background-color: lightgray;
+  border: 1px solid #aaa;
+  transition: background-color 0.2s;
+  cursor: pointer;
+  margin: 2px;
+  margin-bottom: 5px;
 }
 
-.input_radio:nth-of-type(19):checked  ~ .text:before{
-  content:"12";
-}
-.star:nth-of-type(19):hover  ~ .text:before{
-  content:"12"!important;
+.rectangle3.active {
+  background-color: #212b59;
 }
 
-.input_radio:nth-of-type(20):checked  ~ .text:before{
-  content:"11";
-}
-.star:nth-of-type(20):hover  ~ .text:before{
- content:"11"!important;
-}
-
-.input_radio:nth-of-type(1):checked  ~ .text:before{
-  content:"10";
-}
-.star:nth-of-type(1):hover  ~ .text:before{
- content:"10"!important;
-}
-
-.input_radio:nth-of-type(2):checked  ~ .text:before{
-  content:"9";
-}
-.star:nth-of-type(2):hover  ~ .text:before{
- content:"9"!important;
-}
-
-.input_radio:nth-of-type(3):checked  ~ .text:before{
-  content:"8";
-}
-.star:nth-of-type(3):hover  ~ .text:before{
- content:"8"!important;
-}
-
-.input_radio:nth-of-type(4):checked  ~ .text:before{
-  content:"7";
-}
-.star:nth-of-type(4):hover  ~ .text:before{
- content:"7"!important;
-}
-
-.input_radio:nth-of-type(5):checked  ~ .text:before{
-  content:"6";
-}
-.star:nth-of-type(5):hover  ~ .text:before{
- content:"6"!important;
-}
-.input_radio:nth-of-type(6):checked  ~ .text:before{
-  content:"5";
-}
-.star:nth-of-type(6):hover  ~ .text:before{
- content:"5"!important;
-}
-.input_radio:nth-of-type(7):checked  ~ .text:before{
-  content:"4";
-}
-.star:nth-of-type(7):hover  ~ .text:before{
- content:"4"!important;
-}
-.input_radio:nth-of-type(8):checked  ~ .text:before{
-  content:"3";
-}
-.star:nth-of-type(8):hover  ~ .text:before{
- content:"3"!important;
-}
-
-.input_radio:nth-of-type(9):checked  ~ .text:before{
-  content:"2";
-}
-.star:nth-of-type(9):hover  ~ .text:before{
- content:"2"!important;
-}
-
-.input_radio:nth-of-type(10):checked  ~ .text:before{
-  content:"1";
-}
-.star:nth-of-type(10):hover  ~ .text:before{
- content:"1"!important;
+#output3 {
+  font-size: 20px;
+  font-weight: bold;
+  min-height: 24px;
+  padding-bottom: 10px;
 }
 
 
 
-/* Div de droite  */
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================ Div de droite =============== */
+
 .droite{
   width: 42%;
   margin-bottom: auto;
@@ -551,7 +357,7 @@ label:nth-of-type(1):hover  ~ .text:before{
 }
 
 .droite form input{
-  height: 85px;
+  height: 60px;
   margin-top: 25px;
   margin-bottom: 28px;
   border: black solid 1px;
@@ -559,11 +365,15 @@ label:nth-of-type(1):hover  ~ .text:before{
 
 .input_ressenti{
   width: 82% !important;
+  height: 60px ;
 }
+
+
 
 .input_note{
   margin: 0px !important;
   width: 17% !important;
+  height: 60px ;
   text-align: center;
 }
 
@@ -572,7 +382,9 @@ label:nth-of-type(1):hover  ~ .text:before{
 }
 
 .card_cercle{
-  margin-top: 5px !important;
+  margin-top: 10px !important;
+  width: 75%;
+  height: 100%;
 }
 
 .progress-circle{
@@ -621,6 +433,7 @@ label:nth-of-type(1):hover  ~ .text:before{
 .progress-circle:after {
   content: attr(data-value) "%";  /* récup. valeur de progression */
   font-size: 0.15em;              /* taille de la font en % du parent */
+  font-weight: bold;
   height: 100%;                   /* centrage dans le parent */
   display: flex;
   align-items: center;
@@ -641,7 +454,9 @@ label:nth-of-type(1):hover  ~ .text:before{
   left: -.075em;                  /* largeur bordure gauge  */
   top: -.075em;                   /* largeur bordure gauge  */
 }
-
+.progress-circle.smal {
+  font-size: 8em;
+}
 .progress-wrapper {
   display: inline-block;
 }
@@ -650,7 +465,7 @@ label:nth-of-type(1):hover  ~ .text:before{
 #updateButton {
   margin-top: 20px;      /* espace entre le cercle et le bouton */
   padding: 5px 20px;    /* taille du bouton */
-  font-size: 1em;        /* taille du texte dans le bouton */
+  font-size: 0.8em;        /* taille du texte dans le bouton */
   cursor: pointer;      /* souris en forme de main pour le bouton */
   background-color: #c62385; /* couleur de fond du bouton */
   color: white;          /* couleur du texte */
@@ -664,13 +479,14 @@ label:nth-of-type(1):hover  ~ .text:before{
 
 .separation{
   border-top: solid 2px #c62385;
-  margin-top: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 
 
 .button-group {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: center;   /* Centrage horizontal */
   gap: 20%;                 /* Marge horizontale entre les boutons */
@@ -678,8 +494,8 @@ label:nth-of-type(1):hover  ~ .text:before{
 
 .button-group button {
   flex: 1;
-  width: 80px;
-  padding: 5px 20px;
+  width: 50%;
+  padding: 1% 5%;
   font-size: 1em;
   cursor: pointer;
   color: black;
@@ -689,22 +505,152 @@ label:nth-of-type(1):hover  ~ .text:before{
   text-align: center;
 }
 
-.button-group button:hover {
-  background-color: #555;
-}
 
 #resetButton {
   background-color: #dddddd;
+}
+
+#resetButton:hover {
+  background-color: #ddddddbe;
 }
 
 #valider{
   background-color: #53B655;
 }
 
+#valider:hover{
+  background-color: #53B655be;
+  color: black;
+}
+
 #graph{
   background-color: #ffed00;
 }
 
+#graph:hover{
+  background-color: #ffed00be;
+}
+
 .alert-success{
   display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =============== Sur les petits écrans ============== */
+@media (max-width: 768px) {
+  .fiche {
+      flex-direction: column;
+  }
+
+  .gauche, .droite {
+      width: 100%;
+  }
+
+  .gauche {
+    padding-bottom: 3rem;
+  }
+
+
+  /*=========== Formulaire ===========*/
+  .formulaire label {
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+
+  .label_nom,
+  .label_promo,
+  .label_campus {
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+
+  #fname,
+  #promo,
+  #campus {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+
+
+  /*=========== Bandeau ===========*/
+  .bandeau {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .bandeau input{
+    width: 20%;
+  }
+
+
+/*=========== Carte Note ===========*/
+.carte_note .text_note label,
+.carte_note .text_note input {
+    display: inline-block;  /* Affichage côte à côte */
+    width: 48%;  /* Ajuste la largeur à 48% pour les labels et les inputs */
+    margin-right: 4%;  /* Un petit espace entre le label et l'input */
+}
+
+.carte_note .text_note input {
+    width: 48%; /* Ajuste la largeur des inputs */
+}
+
+/*=========== Carte avec petit carre ===========*/
+.rectangle {
+  width: 9%;
+  height: 20px;
+}
+.rectangle2 {
+  width: 9%;
+  height: 20px;
+}
+.rectangle3 {
+  width: 9%;
+  height: 20px;
+}
+
+
+/*=========== Formulaire Ressenti Génerale ===========*/
+.input_ressenti{
+  width: 81% !important;
+}
+
+
+/*=========== Bouton Groupe ===========*/
+.button-group {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 }

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="global.css">
 </head>
-<div class="container-fuid">
+<div class="container-fluid">
 <body class="filigrane">
     <div class="filtre"></div>
     <header>
