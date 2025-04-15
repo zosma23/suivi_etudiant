@@ -86,18 +86,22 @@ for (let i = 1; i <= 20; i++) {
 }
 
 
-
 document.addEventListener("DOMContentLoaded", function() {
-  // Lorsque le bouton est cliqué
-  document.getElementById('validerBtn').addEventListener('click', function() {
-    const alert = document.getElementById('successAlert');
+  document.getElementById("valider").addEventListener("click", function() {
+      const alertMessage = document.getElementById("alertMessage");
 
-    // Afficher l'alerte
-    alert.style.display = 'block';
+      // Affiche avec fondu
+      alertMessage.classList.remove("d-none");
+      alertMessage.classList.add("show");
 
-    // Cacher l'alerte après 3 secondes
-    setTimeout(function() {
-      alert.style.display = 'none';
-    }, 3000); // 3000ms = 3 secondes
+      // Disparaît après 3 secondes
+      setTimeout(() => {
+          alertMessage.classList.remove("show");
+
+          // Optionnel : cache totalement après la transition
+          setTimeout(() => {
+              alertMessage.classList.add("d-none");
+          }, 500); // attendre la fin du fondu
+      }, 3000);
   });
 });

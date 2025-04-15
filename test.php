@@ -11,36 +11,38 @@
 </head>
 <body>
 
-  <!-- Bouton Valider -->
-  <button type="button" class="btn btn-secondary" id="validerBtn">
-    Valider
-  </button>
+<div class="separation"></div>
 
-  <!-- Alerte Bootstrap cachée par défaut -->
-  <div class="alert alert-success" role="alert" id="successAlert" style="display: none;">
-    A simple success alert—check it out!
-  </div>
 
-  <!-- Bootstrap JS et Popper.js -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+                    <div class="button-group">
+                        <button id="resetButton" onclick="location.reload()">Réinitialiser</button>
+                        <button id="valider" type="button" class="btn btn-secondary" >Valider</button>                        
+                        <button id="graph" onclick="window.location.href='graphique.php'">Graphique</button>
+                    </div>
+                    <div id="alertMessage" class="alert alert-success mt-3 d-none" role="alert">Votre saisie a bien été validé</div>
 
-  <!-- JavaScript pour afficher l'alerte au clic -->
-  <script>
+                </div>
+ 
+<!-- <script>
     document.addEventListener("DOMContentLoaded", function() {
-      // Lorsque le bouton est cliqué
-      document.getElementById('validerBtn').addEventListener('click', function() {
-        const alert = document.getElementById('successAlert');
-
-        // Afficher l'alerte
-        alert.style.display = 'block';
-
-        // Cacher l'alerte après 3 secondes
-        setTimeout(function() {
-          alert.style.display = 'none';
-        }, 3000); // 3000ms = 3 secondes
-      });
+        document.getElementById("valider").addEventListener("click", function() {
+            const alertMessage = document.getElementById("alertMessage");
+            alertMessage.classList.remove("d-none");
+        });
     });
-  </script>
-
+</script> -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("valider").addEventListener("click", function() {
+            const alertMessage = document.getElementById("alertMessage");
+            
+            // On force l'affichage au cas où une classe ou un style bloque
+            alertMessage.classList.remove("d-none");
+            alertMessage.style.display = "block";
+            alertMessage.style.visibility = "visible";
+            alertMessage.style.opacity = 1;
+        });
+    });
+</script>
 </body>
 </html>

@@ -96,9 +96,3 @@ updateButton.addEventListener('click', function() {
 
 // Initialiser la progression au chargement de la page
 updateProgress();
-
-
-
-// function valider() {
-//   alert("Votre saisie a bien été validée !");
-// }
